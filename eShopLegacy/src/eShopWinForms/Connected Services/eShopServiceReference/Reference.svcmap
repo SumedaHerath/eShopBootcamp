@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3faa4043-7622-4b35-bc24-b5657131f159" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://eshopbootcamp.southeastasia.cloudapp.azure.com/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CatalogService.disco" MetadataType="Disco" ID="d4a5b539-e1b5-4b1f-897d-3c7d8e5535bd" SourceId="1" SourceUrl="http://eshopbootcamp.southeastasia.cloudapp.azure.com/CatalogService.svc?disco" />
+    <MetadataFile FileName="CatalogService.wsdl" MetadataType="Wsdl" ID="48ef016e-7b2b-435e-8baf-9022afdbc53e" SourceId="1" SourceUrl="http://eshopbootcamp.southeastasia.cloudapp.azure.com/CatalogService.svc?wsdl" />
+    <MetadataFile FileName="CatalogService.xsd" MetadataType="Schema" ID="6329d6af-e03b-485d-8fc9-0c9b58c67cd0" SourceId="1" SourceUrl="http://eshopbootcamp.southeastasia.cloudapp.azure.com/CatalogService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CatalogService1.xsd" MetadataType="Schema" ID="bdbf415d-dacc-4bdd-b89d-ea1f93b85caa" SourceId="1" SourceUrl="http://eshopbootcamp.southeastasia.cloudapp.azure.com/CatalogService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CatalogService2.xsd" MetadataType="Schema" ID="078de2d9-35a2-4a93-9ae9-b53e0ea313e3" SourceId="1" SourceUrl="http://eshopbootcamp.southeastasia.cloudapp.azure.com/CatalogService.svc?xsd=xsd3" />
+    <MetadataFile FileName="CatalogService3.xsd" MetadataType="Schema" ID="e9eaa2b4-acae-4379-b916-124c5cec6798" SourceId="1" SourceUrl="http://eshopbootcamp.southeastasia.cloudapp.azure.com/CatalogService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
