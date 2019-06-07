@@ -3,6 +3,5 @@ This is the repository for demo application used in session on "Application Mode
 
 Notes
 -----
-- Moderized solution is not fully functional. It has been created to demostrate teh modernization sceanrio only.
-- api-management folder contains the copy of configraion repository used during the demo.
-
+- Modernized solution is not fully functional. It has been created to demonstrate the modernization scenario only.
+- api-management folder contains the copy of configuration repository used during the demo.
