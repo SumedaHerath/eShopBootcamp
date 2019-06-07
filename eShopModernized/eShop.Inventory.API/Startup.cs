@@ -1,13 +1,15 @@
-﻿using System;
-using System.IO;
-using System.Reflection;
+﻿using eShop.Core;
+using eShop.Core.Swagger;
 using eShop.Inventory.API.Service;
+using eShop.Utilities;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Swashbuckle.AspNetCore.Swagger;
+using Microsoft.Extensions.Options;
+using Swashbuckle.AspNetCore.SwaggerGen;
+using Swashbuckle.AspNetCore.SwaggerUI;
 
 namespace eShop.Inventory.API
 {
@@ -23,22 +25,22 @@ namespace eShop.Inventory.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton<IConfigureOptions<SwaggerGenOptions>, SwaggerGenConfigurationOptions>();
+            services.AddSingleton<IConfigureOptions<SwaggerUIOptions>, SwaggerUIConfigurationOptions>();
+
+            services.Configure<DatabaseSettings>(Configuration.GetSection("DatabaseSettings"));
             services.AddMvc()
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            // services.AddCorrelationId();
             services.AddApiVersioning(o => o.ReportApiVersions = true);
-            services.AddTransient<IInventoryService, InventoryService>();
-            services.AddSwaggerGen(c =>
+            services.AddVersionedApiExplorer(option =>
             {
-                c.SwaggerDoc("v1", new Info
-                {
-                    Title = "Swagger XML Inventory API",
-                    Version = "v1",
-                });
-                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.XML";
-                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                c.IncludeXmlComments(xmlPath);
+                option.GroupNameFormat = "'v'VVV";
+                option.SubstituteApiVersionInUrl = true;
             });
+            services.AddSwaggerGen();
+                        
+            services.AddScoped<IInventoryService, InventoryService>();
+            services.AddScoped(typeof(IDocumentStore<>), typeof(DocumentStore<>));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,6 +55,9 @@ namespace eShop.Inventory.API
                 app.UseHsts();
             }
 
+            app.UseSwagger();
+            app.UseSwaggerUI();
+            app.UseCors("default");
             app.UseHttpsRedirection();
             app.UseMvc();
         }

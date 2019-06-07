@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <GetCatalogBrandsResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://tempuri.org/">
+      <GetCatalogBrandsResult>
+        <CatalogBrand xmlns="http://schemas.datacontract.org/2004/07/eShopWCFService.Models">
+          <Brand>Brand1</Brand>
+          <Id>1</Id>
+        </CatalogBrand>
+        <CatalogBrand xsi:nil="true" xmlns="http://schemas.datacontract.org/2004/07/eShopWCFService.Models" />
+        <CatalogBrand xmlns="http://schemas.datacontract.org/2004/07/eShopWCFService.Models">
+          <Brand xsi:nil="true" />
+          <Id>-2147483647</Id>
+        </CatalogBrand>
+        <CatalogBrand xsi:nil="true" xmlns="http://schemas.datacontract.org/2004/07/eShopWCFService.Models" />
+        <CatalogBrand xmlns="http://schemas.datacontract.org/2004/07/eShopWCFService.Models">
+          <Brand>Brand2</Brand>
+          <Id>2147483647</Id>
+        </CatalogBrand>
+      </GetCatalogBrandsResult>
+    </GetCatalogBrandsResponse>
+  </Body>
+</Envelope>

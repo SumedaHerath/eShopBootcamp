@@ -1,0 +1,9 @@
+{
+  "id": "/api-version-sets/5cf904d9fae82a9edb820732",
+  "name": "catalog",
+  "description": null,
+  "versioningScheme": "Segment",
+  "versionQueryName": null,
+  "versionHeaderName": null,
+  "__GitModuleVersion": 15
+}

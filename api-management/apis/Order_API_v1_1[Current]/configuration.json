@@ -1,0 +1,63 @@
+{
+  "id": "/apis/order-api",
+  "name": "Order API",
+  "apiRevision": "1",
+  "$ref-description": null,
+  "subscriptionRequired": true,
+  "serviceUrl": "https://apimanagement.hosting.portal.azure.net/apimanagement/Content/1.0.552.0/apimap//apimap-apis/null",
+  "path": "orders",
+  "protocols": [
+    "https"
+  ],
+  "authenticationSettings": {
+    "oAuth2": null,
+    "openid": null
+  },
+  "subscriptionKeyParameterNames": {
+    "header": "Ocp-Apim-Subscription-Key",
+    "query": "subscription-key"
+  },
+  "isCurrent": true,
+  "apiVersion": "v1",
+  "apiVersionSetId": "/api-version-sets/5cf7eb7fc44d5e7ffc8ca112",
+  "operations": [
+    {
+      "id": "/apis/order-api/operations/getorder",
+      "name": "GetOrder",
+      "method": "GET",
+      "urlTemplate": "/{id}",
+      "templateParameters": [
+        {
+          "name": "id",
+          "description": "order id",
+          "type": "integer",
+          "required": true,
+          "values": []
+        }
+      ],
+      "$ref-description": "api-management/apis/Order_API_v1_1[Current]/operations/GET__{id}.description.html",
+      "request": {
+        "queryParameters": [],
+        "headers": [],
+        "representations": []
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "",
+          "representations": [
+            {
+              "contentType": "application/json",
+              "$ref-sample": "api-management/apis/Order_API_v1_1[Current]/operations/GET__{id}.response.200.application_json.html"
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null
+    }
+  ],
+  "apiSchemas": [],
+  "$ref-policy": "api-management/policies/apis/Order_API_v1_1[Current].xml",
+  "__GitModuleVersion": 15
+}

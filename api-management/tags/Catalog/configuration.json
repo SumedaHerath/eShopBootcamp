@@ -1,0 +1,17 @@
+{
+  "id": "/tags/Catalog",
+  "name": "Catalog",
+  "apiIds": [
+    "/apis/catalog-api;rev=1",
+    "/apis/catalogservice;rev=1",
+    "/apis/legacy-catalog-soap-api;rev=1"
+  ],
+  "productIds": [],
+  "descriptions": [],
+  "operationIds": [
+    "/apis/catalog-api/operations/get-catalog-types",
+    "/apis/catalog-api/operations/getcatalogbrands",
+    "/apis/catalog-api/operations/getcatalogitems"
+  ],
+  "__GitModuleVersion": 15
+}

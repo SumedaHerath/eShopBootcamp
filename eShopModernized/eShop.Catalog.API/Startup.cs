@@ -36,11 +36,9 @@ namespace eShop.Catalog.API
             {
                 option.GroupNameFormat = "'v'VVV";
                 option.SubstituteApiVersionInUrl = true;
-            });
-            services.AddApiVersioning(o => o.ReportApiVersions = true);
+            });            
             services.AddSwaggerGen();
-
-            services.AddTransient<ICatalogService, CatalogService>();
+                       
             services.AddScoped<ICatalogService, CatalogService>();
             services.AddScoped(typeof(IDocumentStore<>), typeof(DocumentStore<>));
         }

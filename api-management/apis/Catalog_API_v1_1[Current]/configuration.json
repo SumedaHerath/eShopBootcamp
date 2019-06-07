@@ -1,0 +1,76 @@
+{
+  "id": "/apis/catalog-api",
+  "name": "Catalog API",
+  "apiRevision": "1",
+  "$ref-description": "api-management/apis/Catalog_API_v1_1[Current]/api.description.html",
+  "subscriptionRequired": true,
+  "serviceUrl": null,
+  "path": "catalogs",
+  "protocols": [
+    "https"
+  ],
+  "authenticationSettings": {
+    "oAuth2": null,
+    "openid": null
+  },
+  "subscriptionKeyParameterNames": {
+    "header": "Ocp-Apim-Subscription-Key",
+    "query": "subscription-key"
+  },
+  "isCurrent": true,
+  "apiVersion": "v1",
+  "apiVersionSetId": "/api-version-sets/5cf6c6c068cd57025755a8ac",
+  "operations": [
+    {
+      "id": "/apis/catalog-api/operations/getcatalogbrands",
+      "name": "GetCatalogBrands",
+      "method": "GET",
+      "urlTemplate": "/catalogbrands",
+      "templateParameters": [],
+      "$ref-description": "api-management/apis/Catalog_API_v1_1[Current]/operations/GET__catalogbrands.description.html",
+      "request": {
+        "$ref-description": "api-management/apis/Catalog_API_v1_1[Current]/operations/GET__catalogbrands.request.html",
+        "queryParameters": [],
+        "headers": [],
+        "representations": []
+      },
+      "responses": [],
+      "policies": null,
+      "$ref-policy": "api-management/policies/apis/Catalog_API_v1_1[Current]/operations/GET__catalogbrands.xml"
+    },
+    {
+      "id": "/apis/catalog-api/operations/getcatalogitems",
+      "name": "GetCatalogItems",
+      "method": "GET",
+      "urlTemplate": "/catalogitems",
+      "templateParameters": [],
+      "$ref-description": "api-management/apis/Catalog_API_v1_1[Current]/operations/GET__catalogitems.description.html",
+      "request": {
+        "queryParameters": [],
+        "headers": [],
+        "representations": []
+      },
+      "responses": [],
+      "policies": null
+    },
+    {
+      "id": "/apis/catalog-api/operations/get-catalog-types",
+      "name": "GetCatalogTypes",
+      "method": "GET",
+      "urlTemplate": "/catalogtypes",
+      "templateParameters": [],
+      "$ref-description": "api-management/apis/Catalog_API_v1_1[Current]/operations/GET__catalogtypes.description.html",
+      "request": {
+        "queryParameters": [],
+        "headers": [],
+        "representations": []
+      },
+      "responses": [],
+      "policies": null,
+      "$ref-policy": "api-management/policies/apis/Catalog_API_v1_1[Current]/operations/GET__catalogtypes.xml"
+    }
+  ],
+  "apiSchemas": [],
+  "$ref-policy": "api-management/policies/apis/Catalog_API_v1_1[Current].xml",
+  "__GitModuleVersion": 15
+}

@@ -1,0 +1,76 @@
+{
+  "id": "/apis/inventory-api",
+  "name": "Inventory API",
+  "apiRevision": "1",
+  "$ref-description": null,
+  "subscriptionRequired": true,
+  "serviceUrl": null,
+  "path": "inventory",
+  "protocols": [
+    "https"
+  ],
+  "authenticationSettings": {
+    "oAuth2": null,
+    "openid": null
+  },
+  "subscriptionKeyParameterNames": {
+    "header": "Ocp-Apim-Subscription-Key",
+    "query": "subscription-key"
+  },
+  "isCurrent": true,
+  "apiVersion": "v1",
+  "apiVersionSetId": "/api-version-sets/5cf58bc6eb992836bfb2688f",
+  "operations": [
+    {
+      "id": "/apis/inventory-api/operations/SetReorderPoint",
+      "name": "SetReorderPoint",
+      "method": "PUT",
+      "urlTemplate": "/{catalogItemId}/{reorderPoint}",
+      "templateParameters": [
+        {
+          "name": "catalogItemId",
+          "description": "Format - int32.",
+          "type": "integer",
+          "required": true,
+          "values": []
+        },
+        {
+          "name": "reorderPoint",
+          "description": "Format - int32.",
+          "type": "integer",
+          "required": true,
+          "values": []
+        }
+      ],
+      "$ref-description": null,
+      "request": {
+        "queryParameters": [
+          {
+            "name": "api-version",
+            "type": "string",
+            "values": []
+          }
+        ],
+        "headers": [],
+        "representations": []
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/Inventory_API_v1_1[Current]/operations/PUT__{catalogItemId}_{reorQCNZ4I.response.200.description.html",
+          "representations": [],
+          "headers": []
+        }
+      ],
+      "policies": null
+    }
+  ],
+  "apiSchemas": [
+    {
+      "id": "/apis/inventory-api/schemas/5cf58bce90c2040604bfb4be",
+      "contentType": "application/vnd.ms-azure-apim.swagger.definitions+json",
+      "$ref-documentValue": "api-management/apis/Inventory_API_v1_1[Current]/apiSchemas/5cf58bce90c2040604bfb4be.document"
+    }
+  ],
+  "__GitModuleVersion": 15
+}

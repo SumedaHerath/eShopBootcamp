@@ -1,0 +1,424 @@
+{
+  "id": "/apis/legacy-catalog-soap-api",
+  "name": "legacy-catalog-soap-api",
+  "apiRevision": "1",
+  "$ref-description": null,
+  "subscriptionRequired": true,
+  "serviceUrl": "http://eshopbootcamp.southeastasia.cloudapp.azure.com/CatalogService.svc",
+  "path": "legacycatalogs-soap",
+  "protocols": [
+    "https"
+  ],
+  "authenticationSettings": {
+    "oAuth2": null,
+    "openid": null
+  },
+  "subscriptionKeyParameterNames": {
+    "header": "Ocp-Apim-Subscription-Key",
+    "query": "subscription-key"
+  },
+  "type": "soap",
+  "isCurrent": true,
+  "apiVersion": "v1",
+  "apiVersionSetId": "/api-version-sets/5cf6c4cdfcb40a7558769ba9",
+  "operations": [
+    {
+      "id": "/apis/legacy-catalog-soap-api/operations/5cf6c4d790c2040604bfb4fa",
+      "name": "CreateAvailableStock",
+      "method": "POST",
+      "urlTemplate": "/?soapAction=http://tempuri.org/ICatalogService/CreateAvailableStock",
+      "templateParameters": [],
+      "$ref-description": null,
+      "request": {
+        "$ref-description": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___tITII96.request.html",
+        "queryParameters": [],
+        "headers": [],
+        "representations": [
+          {
+            "contentType": "text/xml",
+            "$ref-sample": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___tITII96.request.text_xml.html",
+            "schemaId": "41595698-fe92-4bf3-b2f7-9cec7151491f",
+            "typeName": "CreateAvailableStock"
+          }
+        ]
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___tITII96.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "text/xml",
+              "$ref-sample": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___tITII96.response.200.text_xml.html",
+              "schemaId": "41595698-fe92-4bf3-b2f7-9cec7151491f",
+              "typeName": "CreateAvailableStockResponse"
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null
+    },
+    {
+      "id": "/apis/legacy-catalog-soap-api/operations/5cf6c4d790c2040604bfb4fb",
+      "name": "CreateCatalogItem",
+      "method": "POST",
+      "urlTemplate": "/?soapAction=http://tempuri.org/ICatalogService/CreateCatalogItem",
+      "templateParameters": [],
+      "$ref-description": null,
+      "request": {
+        "$ref-description": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___tGWELLB.request.html",
+        "queryParameters": [],
+        "headers": [],
+        "representations": [
+          {
+            "contentType": "text/xml",
+            "$ref-sample": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___tGWELLB.request.text_xml.html",
+            "schemaId": "41595698-fe92-4bf3-b2f7-9cec7151491f",
+            "typeName": "CreateCatalogItem"
+          }
+        ]
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___tGWELLB.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "text/xml",
+              "$ref-sample": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___tGWELLB.response.200.text_xml.html",
+              "schemaId": "41595698-fe92-4bf3-b2f7-9cec7151491f",
+              "typeName": "CreateCatalogItemResponse"
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null
+    },
+    {
+      "id": "/apis/legacy-catalog-soap-api/operations/5cf6c4d790c2040604bfb4f5",
+      "name": "FindCatalogItem",
+      "method": "POST",
+      "urlTemplate": "/?soapAction=http://tempuri.org/ICatalogService/FindCatalogItem",
+      "templateParameters": [],
+      "$ref-description": null,
+      "request": {
+        "$ref-description": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___t1QINTIG.request.html",
+        "queryParameters": [],
+        "headers": [],
+        "representations": [
+          {
+            "contentType": "text/xml",
+            "$ref-sample": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___t1QINTIG.request.text_xml.html",
+            "schemaId": "41595698-fe92-4bf3-b2f7-9cec7151491f",
+            "typeName": "FindCatalogItem"
+          }
+        ]
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___t1QINTIG.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "text/xml",
+              "$ref-sample": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___t1QINTIG.response.200.text_xml.html",
+              "schemaId": "41595698-fe92-4bf3-b2f7-9cec7151491f",
+              "typeName": "FindCatalogItemResponse"
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null
+    },
+    {
+      "id": "/apis/legacy-catalog-soap-api/operations/5cf6c4d790c2040604bfb4f9",
+      "name": "GetAvailableStock",
+      "method": "POST",
+      "urlTemplate": "/?soapAction=http://tempuri.org/ICatalogService/GetAvailableStock",
+      "templateParameters": [],
+      "$ref-description": null,
+      "request": {
+        "$ref-description": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___tCWZDZV.request.html",
+        "queryParameters": [],
+        "headers": [],
+        "representations": [
+          {
+            "contentType": "text/xml",
+            "$ref-sample": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___tCWZDZV.request.text_xml.html",
+            "schemaId": "41595698-fe92-4bf3-b2f7-9cec7151491f",
+            "typeName": "GetAvailableStock"
+          }
+        ]
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___tCWZDZV.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "text/xml",
+              "$ref-sample": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___tCWZDZV.response.200.text_xml.html",
+              "schemaId": "41595698-fe92-4bf3-b2f7-9cec7151491f",
+              "typeName": "GetAvailableStockResponse"
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null
+    },
+    {
+      "id": "/apis/legacy-catalog-soap-api/operations/5cf6c4d790c2040604bfb4f6",
+      "name": "GetCatalogBrands",
+      "method": "POST",
+      "urlTemplate": "/?soapAction=http://tempuri.org/ICatalogService/GetCatalogBrands",
+      "templateParameters": [],
+      "$ref-description": null,
+      "request": {
+        "$ref-description": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___tJ40E6T.request.html",
+        "queryParameters": [],
+        "headers": [],
+        "representations": [
+          {
+            "contentType": "text/xml",
+            "$ref-sample": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___tJ40E6T.request.text_xml.html",
+            "schemaId": "41595698-fe92-4bf3-b2f7-9cec7151491f",
+            "typeName": "GetCatalogBrands"
+          }
+        ]
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___tJ40E6T.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "text/xml",
+              "$ref-sample": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___tJ40E6T.response.200.text_xml.html",
+              "schemaId": "41595698-fe92-4bf3-b2f7-9cec7151491f",
+              "typeName": "GetCatalogBrandsResponse"
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null
+    },
+    {
+      "id": "/apis/legacy-catalog-soap-api/operations/5cf6c4d790c2040604bfb4f7",
+      "name": "GetCatalogItems",
+      "method": "POST",
+      "urlTemplate": "/?soapAction=http://tempuri.org/ICatalogService/GetCatalogItems",
+      "templateParameters": [],
+      "$ref-description": null,
+      "request": {
+        "$ref-description": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___t1CUQHM1.request.html",
+        "queryParameters": [],
+        "headers": [],
+        "representations": [
+          {
+            "contentType": "text/xml",
+            "$ref-sample": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___t1CUQHM1.request.text_xml.html",
+            "schemaId": "41595698-fe92-4bf3-b2f7-9cec7151491f",
+            "typeName": "GetCatalogItems"
+          }
+        ]
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___t1CUQHM1.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "text/xml",
+              "$ref-sample": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___t1CUQHM1.response.200.text_xml.html",
+              "schemaId": "41595698-fe92-4bf3-b2f7-9cec7151491f",
+              "typeName": "GetCatalogItemsResponse"
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null
+    },
+    {
+      "id": "/apis/legacy-catalog-soap-api/operations/5cf6c4d790c2040604bfb4f8",
+      "name": "GetCatalogTypes",
+      "method": "POST",
+      "urlTemplate": "/?soapAction=http://tempuri.org/ICatalogService/GetCatalogTypes",
+      "templateParameters": [],
+      "$ref-description": null,
+      "request": {
+        "$ref-description": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___t9GENT6.request.html",
+        "queryParameters": [],
+        "headers": [],
+        "representations": [
+          {
+            "contentType": "text/xml",
+            "$ref-sample": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___t9GENT6.request.text_xml.html",
+            "schemaId": "41595698-fe92-4bf3-b2f7-9cec7151491f",
+            "typeName": "GetCatalogTypes"
+          }
+        ]
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___t9GENT6.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "text/xml",
+              "$ref-sample": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___t9GENT6.response.200.text_xml.html",
+              "schemaId": "41595698-fe92-4bf3-b2f7-9cec7151491f",
+              "typeName": "GetCatalogTypesResponse"
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null
+    },
+    {
+      "id": "/apis/legacy-catalog-soap-api/operations/5cf6c4d790c2040604bfb4fe",
+      "name": "GetDiscount",
+      "method": "POST",
+      "urlTemplate": "/?soapAction=http://tempuri.org/ICatalogService/GetDiscount",
+      "templateParameters": [],
+      "$ref-description": null,
+      "request": {
+        "$ref-description": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___tJ3O6ID.request.html",
+        "queryParameters": [],
+        "headers": [],
+        "representations": [
+          {
+            "contentType": "text/xml",
+            "$ref-sample": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___tJ3O6ID.request.text_xml.html",
+            "schemaId": "41595698-fe92-4bf3-b2f7-9cec7151491f",
+            "typeName": "GetDiscount"
+          }
+        ]
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___tJ3O6ID.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "text/xml",
+              "$ref-sample": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___tJ3O6ID.response.200.text_xml.html",
+              "schemaId": "41595698-fe92-4bf3-b2f7-9cec7151491f",
+              "typeName": "GetDiscountResponse"
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null
+    },
+    {
+      "id": "/apis/legacy-catalog-soap-api/operations/5cf6c4d790c2040604bfb4fd",
+      "name": "RemoveCatalogItem",
+      "method": "POST",
+      "urlTemplate": "/?soapAction=http://tempuri.org/ICatalogService/RemoveCatalogItem",
+      "templateParameters": [],
+      "$ref-description": null,
+      "request": {
+        "$ref-description": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___t1NLRU69.request.html",
+        "queryParameters": [],
+        "headers": [],
+        "representations": [
+          {
+            "contentType": "text/xml",
+            "$ref-sample": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___t1NLRU69.request.text_xml.html",
+            "schemaId": "41595698-fe92-4bf3-b2f7-9cec7151491f",
+            "typeName": "RemoveCatalogItem"
+          }
+        ]
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___t1NLRU69.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "text/xml",
+              "$ref-sample": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___t1NLRU69.response.200.text_xml.html",
+              "schemaId": "41595698-fe92-4bf3-b2f7-9cec7151491f",
+              "typeName": "RemoveCatalogItemResponse"
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null
+    },
+    {
+      "id": "/apis/legacy-catalog-soap-api/operations/5cf6c4d790c2040604bfb4fc",
+      "name": "UpdateCatalogItem",
+      "method": "POST",
+      "urlTemplate": "/?soapAction=http://tempuri.org/ICatalogService/UpdateCatalogItem",
+      "templateParameters": [],
+      "$ref-description": null,
+      "request": {
+        "$ref-description": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___tO1CEB4.request.html",
+        "queryParameters": [],
+        "headers": [],
+        "representations": [
+          {
+            "contentType": "text/xml",
+            "$ref-sample": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___tO1CEB4.request.text_xml.html",
+            "schemaId": "41595698-fe92-4bf3-b2f7-9cec7151491f",
+            "typeName": "UpdateCatalogItem"
+          }
+        ]
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___tO1CEB4.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "text/xml",
+              "$ref-sample": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/operations/POST___soapAction=http___tO1CEB4.response.200.text_xml.html",
+              "schemaId": "41595698-fe92-4bf3-b2f7-9cec7151491f",
+              "typeName": "UpdateCatalogItemResponse"
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null
+    }
+  ],
+  "apiSchemas": [
+    {
+      "id": "/apis/legacy-catalog-soap-api/schemas/41d92cf5-d7f1-4d38-bd6b-4432b0b7281c",
+      "contentType": "application/vnd.ms-azure-apim.xsd+xml",
+      "$ref-documentValue": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/apiSchemas/41d92cf5-d7f1-4d38-bd6b-447C8N05.document"
+    },
+    {
+      "id": "/apis/legacy-catalog-soap-api/schemas/41595698-fe92-4bf3-b2f7-9cec7151491f",
+      "contentType": "application/vnd.ms-azure-apim.xsd+xml",
+      "$ref-documentValue": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/apiSchemas/41595698-fe92-4bf3-b2f7-9c5AJ1KM.document"
+    },
+    {
+      "id": "/apis/legacy-catalog-soap-api/schemas/23e86964-57fd-44cb-81f7-81d15ecf1d16",
+      "contentType": "application/vnd.ms-azure-apim.xsd+xml",
+      "$ref-documentValue": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/apiSchemas/23e86964-57fd-44cb-81f7-81YNLML3.document"
+    },
+    {
+      "id": "/apis/legacy-catalog-soap-api/schemas/38e30b1f-ec35-4fa8-8957-fbbbe69837ed",
+      "contentType": "application/vnd.ms-azure-apim.xsd+xml",
+      "$ref-documentValue": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/apiSchemas/38e30b1f-ec35-4fa8-8957-fbTWTJ5G.document"
+    },
+    {
+      "id": "/apis/legacy-catalog-soap-api/schemas/664ea3b0-1922-4581-806c-8d3815ab86f9",
+      "contentType": "application/vnd.ms-azure-apim.xsd+xml",
+      "$ref-documentValue": "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/apiSchemas/664ea3b0-1922-4581-806c-8d5Z9WSC.document"
+    }
+  ],
+  "__GitModuleVersion": 15
+}

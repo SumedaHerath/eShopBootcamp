@@ -1,0 +1,9 @@
+{
+  "id": "/api-version-sets/5cf7eb7fc44d5e7ffc8ca112",
+  "name": "Order API",
+  "description": null,
+  "versioningScheme": "Segment",
+  "versionQueryName": null,
+  "versionHeaderName": null,
+  "__GitModuleVersion": 15
+}

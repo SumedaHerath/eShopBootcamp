@@ -6,7 +6,9 @@ using eShop.Catalog.API.Service;
 using Microsoft.AspNetCore.Mvc;
 
 namespace eShop.Catalog.API.Controllers
-{   
+{
+    [ApiVersion("1")]
+    [Route("api/v{api-version:apiVersion}/[controller]")]
     [ApiController]
     public class CatalogController : ControllerBase
     {

@@ -1,0 +1,9 @@
+{
+  "id": "/api-version-sets/5cf58bc6eb992836bfb2688f",
+  "name": "Inventory API",
+  "description": null,
+  "versioningScheme": "Segment",
+  "versionQueryName": null,
+  "versionHeaderName": null,
+  "__GitModuleVersion": 15
+}

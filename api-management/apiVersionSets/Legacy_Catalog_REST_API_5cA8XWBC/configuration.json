@@ -1,0 +1,9 @@
+{
+  "id": "/api-version-sets/5cf18c33ba728f4b9c0f0d1c",
+  "name": "Legacy Catalog REST API",
+  "description": null,
+  "versioningScheme": "Segment",
+  "versionQueryName": null,
+  "versionHeaderName": null,
+  "__GitModuleVersion": 15
+}

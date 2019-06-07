@@ -1,0 +1,12 @@
+{
+  "id": "/tags/legacy",
+  "name": "Legacy",
+  "apiIds": [
+    "/apis/catalogservice;rev=1",
+    "/apis/legacy-catalog-soap-api;rev=1"
+  ],
+  "productIds": [],
+  "descriptions": [],
+  "operationIds": [],
+  "__GitModuleVersion": 15
+}

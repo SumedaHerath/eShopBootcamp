@@ -1,0 +1,13 @@
+{
+  "id": "/tags/modernized",
+  "name": "Modernized",
+  "apiIds": [
+    "/apis/catalog-api;rev=1",
+    "/apis/inventory-api;rev=1",
+    "/apis/order-api;rev=1"
+  ],
+  "productIds": [],
+  "descriptions": [],
+  "operationIds": [],
+  "__GitModuleVersion": 15
+}

@@ -1,0 +1,476 @@
+{
+  "definitions": {
+    "FindCatalogItem": {
+      "type": "object",
+      "properties": {
+        "findCatalogItem": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    },
+    "FindCatalogItemResponse": {
+      "type": "object",
+      "properties": {
+        "findCatalogItemResponse": {
+          "type": "object",
+          "properties": {
+            "findCatalogItemResult": {
+              "type": "object",
+              "properties": {
+                "catalogBrand": {
+                  "type": "object",
+                  "properties": {
+                    "brand": {
+                      "type": "string"
+                    },
+                    "id": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "catalogBrandId": {
+                  "type": "number"
+                },
+                "catalogType": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number"
+                    },
+                    "type": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "catalogTypeId": {
+                  "type": "number"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "number"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "picturefilename": {
+                  "type": "string"
+                },
+                "price": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "GetCatalogBrands": {},
+    "GetCatalogBrandsResponse": {
+      "type": "object",
+      "properties": {
+        "getCatalogBrandsResponse": {
+          "type": "object",
+          "properties": {
+            "getCatalogBrandsResult": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "brand": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "GetCatalogItems": {
+      "type": "object",
+      "properties": {
+        "getCatalogItems": {
+          "type": "object",
+          "properties": {
+            "brandIdFilter": {
+              "type": "number"
+            },
+            "typeIdFilter": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    },
+    "GetCatalogItemsResponse": {
+      "type": "object",
+      "properties": {
+        "getCatalogItemsResponse": {
+          "type": "object",
+          "properties": {
+            "getCatalogItemsResult": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "catalogBrand": {
+                    "type": "object",
+                    "properties": {
+                      "brand": {
+                        "type": "string"
+                      },
+                      "id": {
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "catalogBrandId": {
+                    "type": "number"
+                  },
+                  "catalogType": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "number"
+                      },
+                      "type": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "catalogTypeId": {
+                    "type": "number"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "number"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "picturefilename": {
+                    "type": "string"
+                  },
+                  "price": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "GetCatalogTypes": {},
+    "GetCatalogTypesResponse": {
+      "type": "object",
+      "properties": {
+        "getCatalogTypesResponse": {
+          "type": "object",
+          "properties": {
+            "getCatalogTypesResult": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "number"
+                  },
+                  "type": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "GetAvailableStock": {
+      "type": "object",
+      "properties": {
+        "getAvailableStock": {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "object"
+            },
+            "catalogItemId": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    },
+    "GetAvailableStockResponse": {
+      "type": "object",
+      "properties": {
+        "getAvailableStockResponse": {
+          "type": "object",
+          "properties": {
+            "getAvailableStockResult": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    },
+    "CreateAvailableStock": {
+      "type": "object",
+      "properties": {
+        "createAvailableStock": {
+          "type": "object",
+          "properties": {
+            "catalogItemsStock": {
+              "type": "object",
+              "properties": {
+                "availableStock": {
+                  "type": "number"
+                },
+                "catalogItemId": {
+                  "type": "number"
+                },
+                "date": {
+                  "type": "object"
+                },
+                "stockId": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "CreateAvailableStockResponse": {},
+    "CreateCatalogItem": {
+      "type": "object",
+      "properties": {
+        "createCatalogItem": {
+          "type": "object",
+          "properties": {
+            "catalogItem": {
+              "type": "object",
+              "properties": {
+                "catalogBrand": {
+                  "type": "object",
+                  "properties": {
+                    "brand": {
+                      "type": "string"
+                    },
+                    "id": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "catalogBrandId": {
+                  "type": "number"
+                },
+                "catalogType": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number"
+                    },
+                    "type": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "catalogTypeId": {
+                  "type": "number"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "number"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "picturefilename": {
+                  "type": "string"
+                },
+                "price": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "CreateCatalogItemResponse": {},
+    "UpdateCatalogItem": {
+      "type": "object",
+      "properties": {
+        "updateCatalogItem": {
+          "type": "object",
+          "properties": {
+            "catalogItem": {
+              "type": "object",
+              "properties": {
+                "catalogBrand": {
+                  "type": "object",
+                  "properties": {
+                    "brand": {
+                      "type": "string"
+                    },
+                    "id": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "catalogBrandId": {
+                  "type": "number"
+                },
+                "catalogType": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number"
+                    },
+                    "type": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "catalogTypeId": {
+                  "type": "number"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "number"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "picturefilename": {
+                  "type": "string"
+                },
+                "price": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "UpdateCatalogItemResponse": {},
+    "RemoveCatalogItem": {
+      "type": "object",
+      "properties": {
+        "removeCatalogItem": {
+          "type": "object",
+          "properties": {
+            "catalogItem": {
+              "type": "object",
+              "properties": {
+                "catalogBrand": {
+                  "type": "object",
+                  "properties": {
+                    "brand": {
+                      "type": "string"
+                    },
+                    "id": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "catalogBrandId": {
+                  "type": "number"
+                },
+                "catalogType": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number"
+                    },
+                    "type": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "catalogTypeId": {
+                  "type": "number"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "number"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "picturefilename": {
+                  "type": "string"
+                },
+                "price": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "RemoveCatalogItemResponse": {},
+    "GetDiscount": {
+      "type": "object",
+      "properties": {
+        "getDiscount": {
+          "type": "object",
+          "properties": {
+            "day": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "GetDiscountResponse": {
+      "type": "object",
+      "properties": {
+        "getDiscountResponse": {
+          "type": "object",
+          "properties": {
+            "getDiscountResult": {
+              "type": "object",
+              "properties": {
+                "end": {
+                  "type": "object"
+                },
+                "id": {
+                  "type": "number"
+                },
+                "size": {
+                  "type": "number"
+                },
+                "start": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

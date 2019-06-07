@@ -17,4 +17,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="4.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\eShop.Core\eShop.Core.csproj" />
+    <ProjectReference Include="..\eShop.Utilities\eShop.Utilities.csproj" />
+  </ItemGroup>
+
 </Project>

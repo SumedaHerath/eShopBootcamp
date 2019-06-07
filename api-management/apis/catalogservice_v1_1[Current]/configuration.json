@@ -1,0 +1,413 @@
+{
+  "id": "/apis/catalogservice",
+  "name": "catalogservice",
+  "apiRevision": "1",
+  "$ref-description": "api-management/apis/catalogservice_v1_1[Current]/api.description.html",
+  "subscriptionRequired": true,
+  "serviceUrl": "http://eshopbootcamp.southeastasia.cloudapp.azure.com",
+  "path": "legacycatalogs-rest",
+  "protocols": [
+    "https"
+  ],
+  "authenticationSettings": {
+    "oAuth2": null,
+    "openid": null
+  },
+  "subscriptionKeyParameterNames": {
+    "header": "Ocp-Apim-Subscription-Key",
+    "query": "subscription-key"
+  },
+  "isCurrent": true,
+  "apiVersion": "v1",
+  "apiVersionSetId": "/api-version-sets/5cf18c33ba728f4b9c0f0d1c",
+  "operations": [
+    {
+      "id": "/apis/catalogservice/operations/5cf18c4990c2040604bfb495",
+      "name": "CreateAvailableStock",
+      "method": "POST",
+      "urlTemplate": "/CreateAvailableStock",
+      "templateParameters": [],
+      "$ref-description": null,
+      "request": {
+        "$ref-description": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__CreateAvailableStock.request.html",
+        "queryParameters": [],
+        "headers": [],
+        "representations": [
+          {
+            "contentType": "application/json",
+            "$ref-sample": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__CreateAvailableStock.request.application_json.html",
+            "schemaId": "89dea10b-d80c-44f5-ad19-c7a70f8aa533",
+            "typeName": "CreateAvailableStock"
+          }
+        ]
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__CreateAvailableStock.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "application/json",
+              "$ref-sample": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__CreateAvailableStock.response.200.application_json.html",
+              "schemaId": "89dea10b-d80c-44f5-ad19-c7a70f8aa533",
+              "typeName": "CreateAvailableStockResponse"
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null,
+      "$ref-policy": "api-management/policies/apis/catalogservice_v1_1[Current]/operations/POST__CreateAvailableStock.xml"
+    },
+    {
+      "id": "/apis/catalogservice/operations/5cf18c4990c2040604bfb496",
+      "name": "CreateCatalogItem",
+      "method": "POST",
+      "urlTemplate": "/CreateCatalogItem",
+      "templateParameters": [],
+      "$ref-description": null,
+      "request": {
+        "$ref-description": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__CreateCatalogItem.request.html",
+        "queryParameters": [],
+        "headers": [],
+        "representations": [
+          {
+            "contentType": "application/json",
+            "$ref-sample": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__CreateCatalogItem.request.application_json.html",
+            "schemaId": "89dea10b-d80c-44f5-ad19-c7a70f8aa533",
+            "typeName": "CreateCatalogItem"
+          }
+        ]
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__CreateCatalogItem.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "application/json",
+              "$ref-sample": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__CreateCatalogItem.response.200.application_json.html",
+              "schemaId": "89dea10b-d80c-44f5-ad19-c7a70f8aa533",
+              "typeName": "CreateCatalogItemResponse"
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null,
+      "$ref-policy": "api-management/policies/apis/catalogservice_v1_1[Current]/operations/POST__CreateCatalogItem.xml"
+    },
+    {
+      "id": "/apis/catalogservice/operations/5cf18c4890c2040604bfb490",
+      "name": "FindCatalogItem",
+      "method": "POST",
+      "urlTemplate": "/FindCatalogItem",
+      "templateParameters": [],
+      "$ref-description": null,
+      "request": {
+        "$ref-description": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__FindCatalogItem.request.html",
+        "queryParameters": [],
+        "headers": [],
+        "representations": [
+          {
+            "contentType": "application/json",
+            "$ref-sample": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__FindCatalogItem.request.application_json.html",
+            "schemaId": "89dea10b-d80c-44f5-ad19-c7a70f8aa533",
+            "typeName": "FindCatalogItem"
+          }
+        ]
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__FindCatalogItem.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "application/json",
+              "$ref-sample": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__FindCatalogItem.response.200.application_json.html",
+              "schemaId": "89dea10b-d80c-44f5-ad19-c7a70f8aa533",
+              "typeName": "FindCatalogItemResponse"
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null,
+      "$ref-policy": "api-management/policies/apis/catalogservice_v1_1[Current]/operations/POST__FindCatalogItem.xml"
+    },
+    {
+      "id": "/apis/catalogservice/operations/5cf18c4990c2040604bfb494",
+      "name": "GetAvailableStock",
+      "method": "POST",
+      "urlTemplate": "/GetAvailableStock",
+      "templateParameters": [],
+      "$ref-description": null,
+      "request": {
+        "$ref-description": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__GetAvailableStock.request.html",
+        "queryParameters": [],
+        "headers": [],
+        "representations": [
+          {
+            "contentType": "application/json",
+            "$ref-sample": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__GetAvailableStock.request.application_json.html",
+            "schemaId": "89dea10b-d80c-44f5-ad19-c7a70f8aa533",
+            "typeName": "GetAvailableStock"
+          }
+        ]
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__GetAvailableStock.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "application/json",
+              "$ref-sample": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__GetAvailableStock.response.200.application_json.html",
+              "schemaId": "89dea10b-d80c-44f5-ad19-c7a70f8aa533",
+              "typeName": "GetAvailableStockResponse"
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null,
+      "$ref-policy": "api-management/policies/apis/catalogservice_v1_1[Current]/operations/POST__GetAvailableStock.xml"
+    },
+    {
+      "id": "/apis/catalogservice/operations/5cf18c4990c2040604bfb491",
+      "name": "GetCatalogBrands",
+      "method": "GET",
+      "urlTemplate": "/catalogbrands",
+      "templateParameters": [],
+      "$ref-description": null,
+      "request": {
+        "$ref-description": "api-management/apis/catalogservice_v1_1[Current]/operations/GET__catalogbrands.request.html",
+        "queryParameters": [],
+        "headers": [],
+        "representations": [
+          {
+            "contentType": "application/json",
+            "$ref-sample": "api-management/apis/catalogservice_v1_1[Current]/operations/GET__catalogbrands.request.application_json.html",
+            "schemaId": "89dea10b-d80c-44f5-ad19-c7a70f8aa533",
+            "typeName": "GetCatalogBrands"
+          }
+        ]
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/catalogservice_v1_1[Current]/operations/GET__catalogbrands.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "application/json",
+              "$ref-sample": "api-management/apis/catalogservice_v1_1[Current]/operations/GET__catalogbrands.response.200.application_json.html",
+              "schemaId": "89dea10b-d80c-44f5-ad19-c7a70f8aa533",
+              "typeName": "GetCatalogBrandsResponse"
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null,
+      "$ref-policy": "api-management/policies/apis/catalogservice_v1_1[Current]/operations/GET__catalogbrands.xml"
+    },
+    {
+      "id": "/apis/catalogservice/operations/5cf18c4990c2040604bfb492",
+      "name": "GetCatalogItems",
+      "method": "POST",
+      "urlTemplate": "/GetCatalogItems",
+      "templateParameters": [],
+      "$ref-description": null,
+      "request": {
+        "$ref-description": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__GetCatalogItems.request.html",
+        "queryParameters": [],
+        "headers": [],
+        "representations": [
+          {
+            "contentType": "application/json",
+            "$ref-sample": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__GetCatalogItems.request.application_json.html",
+            "schemaId": "89dea10b-d80c-44f5-ad19-c7a70f8aa533",
+            "typeName": "GetCatalogItems"
+          }
+        ]
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__GetCatalogItems.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "application/json",
+              "$ref-sample": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__GetCatalogItems.response.200.application_json.html",
+              "schemaId": "89dea10b-d80c-44f5-ad19-c7a70f8aa533",
+              "typeName": "GetCatalogItemsResponse"
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null,
+      "$ref-policy": "api-management/policies/apis/catalogservice_v1_1[Current]/operations/POST__GetCatalogItems.xml"
+    },
+    {
+      "id": "/apis/catalogservice/operations/5cf18c4990c2040604bfb493",
+      "name": "GetCatalogTypes",
+      "method": "GET",
+      "urlTemplate": "/catalogtypes",
+      "templateParameters": [],
+      "$ref-description": null,
+      "request": {
+        "$ref-description": "api-management/apis/catalogservice_v1_1[Current]/operations/GET__catalogtypes.request.html",
+        "queryParameters": [],
+        "headers": [],
+        "representations": [
+          {
+            "contentType": "application/json",
+            "$ref-sample": "api-management/apis/catalogservice_v1_1[Current]/operations/GET__catalogtypes.request.application_json.html",
+            "schemaId": "89dea10b-d80c-44f5-ad19-c7a70f8aa533",
+            "typeName": "GetCatalogTypes"
+          }
+        ]
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/catalogservice_v1_1[Current]/operations/GET__catalogtypes.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "application/json",
+              "$ref-sample": "api-management/apis/catalogservice_v1_1[Current]/operations/GET__catalogtypes.response.200.application_json.html",
+              "schemaId": "89dea10b-d80c-44f5-ad19-c7a70f8aa533",
+              "typeName": "GetCatalogTypesResponse"
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null,
+      "$ref-policy": "api-management/policies/apis/catalogservice_v1_1[Current]/operations/GET__catalogtypes.xml"
+    },
+    {
+      "id": "/apis/catalogservice/operations/5cf18c4990c2040604bfb499",
+      "name": "GetDiscount",
+      "method": "POST",
+      "urlTemplate": "/GetDiscount",
+      "templateParameters": [],
+      "$ref-description": null,
+      "request": {
+        "$ref-description": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__GetDiscount.request.html",
+        "queryParameters": [],
+        "headers": [],
+        "representations": [
+          {
+            "contentType": "application/json",
+            "$ref-sample": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__GetDiscount.request.application_json.html",
+            "schemaId": "89dea10b-d80c-44f5-ad19-c7a70f8aa533",
+            "typeName": "GetDiscount"
+          }
+        ]
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__GetDiscount.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "application/json",
+              "$ref-sample": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__GetDiscount.response.200.application_json.html",
+              "schemaId": "89dea10b-d80c-44f5-ad19-c7a70f8aa533",
+              "typeName": "GetDiscountResponse"
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null,
+      "$ref-policy": "api-management/policies/apis/catalogservice_v1_1[Current]/operations/POST__GetDiscount.xml"
+    },
+    {
+      "id": "/apis/catalogservice/operations/5cf18c4990c2040604bfb498",
+      "name": "RemoveCatalogItem",
+      "method": "POST",
+      "urlTemplate": "/RemoveCatalogItem",
+      "templateParameters": [],
+      "$ref-description": null,
+      "request": {
+        "$ref-description": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__RemoveCatalogItem.request.html",
+        "queryParameters": [],
+        "headers": [],
+        "representations": [
+          {
+            "contentType": "application/json",
+            "$ref-sample": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__RemoveCatalogItem.request.application_json.html",
+            "schemaId": "89dea10b-d80c-44f5-ad19-c7a70f8aa533",
+            "typeName": "RemoveCatalogItem"
+          }
+        ]
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__RemoveCatalogItem.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "application/json",
+              "$ref-sample": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__RemoveCatalogItem.response.200.application_json.html",
+              "schemaId": "89dea10b-d80c-44f5-ad19-c7a70f8aa533",
+              "typeName": "RemoveCatalogItemResponse"
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null,
+      "$ref-policy": "api-management/policies/apis/catalogservice_v1_1[Current]/operations/POST__RemoveCatalogItem.xml"
+    },
+    {
+      "id": "/apis/catalogservice/operations/5cf18c4990c2040604bfb497",
+      "name": "UpdateCatalogItem",
+      "method": "POST",
+      "urlTemplate": "/UpdateCatalogItem",
+      "templateParameters": [],
+      "$ref-description": null,
+      "request": {
+        "$ref-description": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__UpdateCatalogItem.request.html",
+        "queryParameters": [],
+        "headers": [],
+        "representations": [
+          {
+            "contentType": "application/json",
+            "$ref-sample": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__UpdateCatalogItem.request.application_json.html",
+            "schemaId": "89dea10b-d80c-44f5-ad19-c7a70f8aa533",
+            "typeName": "UpdateCatalogItem"
+          }
+        ]
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__UpdateCatalogItem.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "application/json",
+              "$ref-sample": "api-management/apis/catalogservice_v1_1[Current]/operations/POST__UpdateCatalogItem.response.200.application_json.html",
+              "schemaId": "89dea10b-d80c-44f5-ad19-c7a70f8aa533",
+              "typeName": "UpdateCatalogItemResponse"
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null,
+      "$ref-policy": "api-management/policies/apis/catalogservice_v1_1[Current]/operations/POST__UpdateCatalogItem.xml"
+    }
+  ],
+  "apiSchemas": [
+    {
+      "id": "/apis/catalogservice/schemas/89dea10b-d80c-44f5-ad19-c7a70f8aa533",
+      "contentType": "application/vnd.ms-azure-apim.swagger.definitions+json",
+      "$ref-documentValue": "api-management/apis/catalogservice_v1_1[Current]/apiSchemas/89dea10b-d80c-44f5-ad19-c71AA84SU.document"
+    }
+  ],
+  "__GitModuleVersion": 15
+}

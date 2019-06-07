@@ -1,0 +1,13 @@
+{
+  "id": "/tags/Inventory",
+  "name": "Inventory",
+  "apiIds": [
+    "/apis/inventory-api;rev=1"
+  ],
+  "productIds": [],
+  "descriptions": [],
+  "operationIds": [
+    "/apis/inventory-api/operations/SetReorderPoint"
+  ],
+  "__GitModuleVersion": 15
+}

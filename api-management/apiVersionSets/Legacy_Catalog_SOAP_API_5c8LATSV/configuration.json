@@ -1,0 +1,9 @@
+{
+  "id": "/api-version-sets/5cf6c4cdfcb40a7558769ba9",
+  "name": "Legacy Catalog SOAP API",
+  "description": null,
+  "versioningScheme": "Segment",
+  "versionQueryName": null,
+  "versionHeaderName": null,
+  "__GitModuleVersion": 15
+}

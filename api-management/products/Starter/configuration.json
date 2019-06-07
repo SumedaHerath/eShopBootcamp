@@ -1,0 +1,25 @@
+{
+  "id": "/products/starter",
+  "name": "Starter",
+  "$ref-description": "api-management/products/Starter/product.description.html",
+  "terms": "",
+  "subscriptionRequired": true,
+  "approvalRequired": false,
+  "subscriptionsLimit": 1,
+  "state": "published",
+  "$refs-groups": [
+    "api-management/groups/Administrators/configuration.json",
+    "api-management/groups/Developers/configuration.json",
+    "api-management/groups/Guests/configuration.json"
+  ],
+  "$refs-apis": [
+    "api-management/apis/Catalog_API_v1_1[Current]/configuration.json",
+    "api-management/apis/catalogservice_v1_1[Current]/configuration.json",
+    "api-management/apis/Echo_API__1[Current]/configuration.json",
+    "api-management/apis/Inventory_API_v1_1[Current]/configuration.json",
+    "api-management/apis/legacy-catalog-soap-api_v1CSAM4I/configuration.json",
+    "api-management/apis/Order_API_v1_1[Current]/configuration.json"
+  ],
+  "$ref-policy": "api-management/policies/products/Starter.xml",
+  "__GitModuleVersion": 15
+}

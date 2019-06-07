@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace eShop.Inventory.API.Controllers
 {
     [ApiVersion("1")]
-    [Route("api/[controller]")]
+    [Route("api/v{api-version:apiVersion}/[controller]")]
     [ApiController]
     public class InventoryController : ControllerBase
     {
@@ -18,7 +18,7 @@ namespace eShop.Inventory.API.Controllers
             _inventroyService = inventroyService;
         }
 
-        [HttpDelete("{catalogItemId}/{reorderPoint}")]
+        [HttpPut("{catalogItemId}/{reorderPoint}")]
         public async Task<IActionResult> SetReorderPoint(int catalogItemId, int reorderPoint)
         {
             try
